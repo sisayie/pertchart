@@ -9,7 +9,7 @@ The purpose of his application is to automatically generate pert chart from task
 
 # Data File
 The data file contains task tuples one per line as in the following sample:
-`
+```
 ("Task id", "start", "duration", "end", "responsible", "START")
 ("Task id1", "start", "duration", "end", "responsible", "Task id")
 ("Task id2", "start", "duration", "end", "responsible", "Task id1")
@@ -18,7 +18,7 @@ The data file contains task tuples one per line as in the following sample:
 ("Task id5", "start", "duration", "end", "responsible", "Task id2")
 ("END", "start", "duration", "end", "responsible", "Task id4")
 ("END", "start", "duration", "end", "responsible", "Task id5")
-`
+```
 
 # Credits and References
 - btree.py - http://www.graphviz.org/pdf/dotguide.pdf Figure 13
