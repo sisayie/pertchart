@@ -1,4 +1,7 @@
 # Requirements
+# graphviz
+
+#In case it raised errors, uninstall graphvis and reinstall it
 #! pip uninstall graphviz
 #! conda install python-graphviz
 
