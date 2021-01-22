@@ -1,13 +1,13 @@
 # pertchart
 
-[![Build Status](https://travis-ci.org/sisayie/pertchart.svg?branch=master)](https://travis-ci.org/sisayie/pertchart)
+[![Build Status](https://travis-ci.com/sisayie/pertchart.svg?branch=master)](https://travis-ci.com/github/sisayie/pertchart)
 
 The purpose of his application is to automatically generate pert chart from tasks in text file.
 
 ## Requirement
 `pip install graphviz`
 
-# Data File
+## Data File
 The data file contains task tuples one per line as in the following sample:
 ```
 ("Task id", "start", "duration", "end", "responsible", "START")
@@ -20,7 +20,7 @@ The data file contains task tuples one per line as in the following sample:
 ("END", "start", "duration", "end", "responsible", "Task id5")
 ```
 
-# Credits and References
+### Credits and References
 - btree.py - http://www.graphviz.org/pdf/dotguide.pdf Figure 13
 - https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft
 - https://www.programcreek.com/python/example/104476/graphviz.Digraph
