@@ -11,7 +11,6 @@
 
 from graphviz import Digraph, nohtml
 import ast
-import logging
 import sys
 
 # Data
@@ -41,7 +40,7 @@ class PertChart:
                     values = ast.literal_eval(line)
                     task_list.append(values)
         except:
-            logging.warning("Cannot generate PERT chart. File does not exist -> " + filename)
+            print("Cannot generate PERT chart. File does not exist -> " + filename)
             sys.exit(1)
                 
         a = task_list
@@ -87,9 +86,9 @@ class PertChart:
                 else:
                     g.edge(i[5], i[0])
         except:
-            logging.warning("Unexpected error. Check your inputs")
+            print("Unexpected error. Check your inputs")
         finally:
-            logging.info("PERT chart generated successfully")
+            print("PERT chart generated successfully")
 
         g.view()
 
@@ -104,4 +103,4 @@ if __name__ == '__main__':
         filename = sys.argv[1] #"datafile.txt"
         pt.create_pert_chart(filename)
     else:
-        logging.warning("Usage: pertchart <filename>")
+        print("Usage: pertchart <filename>")

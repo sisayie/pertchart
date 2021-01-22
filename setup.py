@@ -2,17 +2,16 @@ from distutils.core import setup
 setup(
   name = 'pertchart',
   packages = ['pertchart'],
-  version = '0.1',
+  version = '0.2',
   license='MIT',
   description = 'PERT chart generator',
   author = 'Sisay Chala',
   author_email = 'sisayie@gmail.com',
   url = 'https://github.com/sisayie/pertchart',
-  download_url = 'https://github.com/sisayie/pertchart/archive/v_01.tar.gz',
+  download_url = 'https://github.com/sisayie/pertchart/archive/v_02.tar.gz',
   keywords = ['pert chart', 'project plan', 'gantt'],
   install_requires=[
-          'graphviz', 
-          'logging'
+          'graphviz'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',
