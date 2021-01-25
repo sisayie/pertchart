@@ -4,10 +4,16 @@
 
 The purpose of his application is to automatically generate pert chart from tasks in text file.
 
-## Requirement
-`pip install graphviz`
+## Usage
+`pip install pertchart`
+```
+from pertchart import PertChart
 
-## Data File
+pc = PertChart()
+pc.create_pert_chart(path_to_inputfile)
+```
+
+### Example Input Data File
 The data file contains task tuples one per line as in the following sample:
 ```
 ("Task id", "start", "duration", "end", "responsible", "START")
@@ -20,7 +26,7 @@ The data file contains task tuples one per line as in the following sample:
 ("END", "start", "duration", "end", "responsible", "Task id5")
 ```
 
-## Output PERT chart for th eabove input data
+## Exacmple Output PERT chart for th eabove input data
 ![alt text](output.PNG "PERT output")
 
 ### Credits and References

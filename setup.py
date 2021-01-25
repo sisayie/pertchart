@@ -1,14 +1,22 @@
-from distutils.core import setup
+from setuptools import setup
+
+# read the contents of your README file
+from os import path
+work_dir = path.abspath(path.dirname(__file__))
+with open(path.join(work_dir, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
   name = 'pertchart',
   packages = ['pertchart'],
   version = '0.3',
   license='MIT',
   description = 'PERT chart generator',
+  long_description=long_description,
+  long_description_content_type='text/markdown',
   author = 'Sisay Chala',
   author_email = 'sisayie@gmail.com',
   url = 'https://github.com/sisayie/pertchart',
-  download_url = 'https://github.com/sisayie/pertchart/archive/v_03.tar.gz',
   keywords = ['pert chart', 'project plan', 'gantt'],
   install_requires=[
           'graphviz'
