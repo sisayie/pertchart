@@ -20,6 +20,9 @@ The data file contains task tuples one per line as in the following sample:
 ("END", "start", "duration", "end", "responsible", "Task id5")
 ```
 
+## Output PERT chart for th eabove input data
+![alt text](output.PNG "PERT output")
+
 ### Credits and References
 - btree.py - http://www.graphviz.org/pdf/dotguide.pdf Figure 13
 - https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft
