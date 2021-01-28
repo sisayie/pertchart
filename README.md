@@ -4,8 +4,10 @@
 
 The purpose of his application is to automatically generate pert chart from tasks in json file.
 
+## Installation
+```pip install pertchart```
+
 ## Usage
-`pip install pertchart`
 ```
 from pertchart import PertChart
 
@@ -94,10 +96,10 @@ The data file contains task tuples one per line as in the following sample:
 ```
 
 ## Exacmple Output PERT chart for th eabove input data
-![alt text](pert_v0.4.png "PERT output")
+![PERT Output](https://github.com/sisayie/pertchart/blob/master/pert_v0.4.png "PERT output")
 
 ### Credits and References
-- http://www.graphviz.org/pdf/dotguide.pdfbtree.pyFigure 13
+- http://www.graphviz.org/pdf/dotguide.pdfbtree.pyFigure13
 - https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft
 - https://www.programcreek.com/python/example/104476/graphviz.Digraph
 - https://graphviz.readthedocs.io/en/stable/examples.html#structs-py
