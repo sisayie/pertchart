@@ -9,7 +9,6 @@
 #! pip uninstall graphviz
 #! conda install python-graphviz
 
-
 from graphviz import Digraph, nohtml
 import ast
 import sys
@@ -80,16 +79,15 @@ class PertChart:
             
             elif len(pred) >1: # more than 1 predecessor
                 key = pred[1].strip()
-                print(key)
-                print(p1[key]['end'])
-                p1[k]['start'] = max(p1[pred[1].strip()]['end'], p1[pred[1].strip()]['end']) # list compression
+                ends = [p1[p.strip()]['end'] for p in pred] # list comprehenssion
+                p1[k]['start'] = max(ends) 
                 p1[k]['end'] = p1[k]['start'] + p1[k]['duration']
                 #l = p1[pred[1]]['EF'] # for j in range(len(pred))
                 #p1[k]['ES'] = max([p1[pred[j]['EF'] for j in range(len(pred)
         return p1
         
-    def create_pert_chart(self, task_list):
-        """Gets task list from file and generates PERT chart
+    def create_pert_chart(self, task_list, fill_color = 'grey93', line_color = 'blue'):
+        """Gets task list, optional fill_color and line_color and generates PERT chart
             
         Parameters
         ----------
@@ -121,7 +119,8 @@ class PertChart:
                                'height': '.1'})
 
         # configurations
-        fill_color = 'grey93'
+        fl_color = fill_color
+        ln_color = line_color
 
         g.attr(rankdir='LR')
         g.attr('node', shape='record')
@@ -139,7 +138,7 @@ class PertChart:
                           a[i][4]), 
                    fillcolor=fill_color, 
                    style='filled',
-                   color='red'
+                   color= line_color
                   )
         '''
             
@@ -150,9 +149,9 @@ class PertChart:
                 nohtml('<f0>' +
                     a[k]["Tid"] +
                     ' |{' + str(a[k]["start"]) + '|' + str(a[k]["duration"]) + '|' + str(a[k]["end"]) + '}|<f2>' + a[k]["responsible"]),
-                    fillcolor=fill_color,
+                    fillcolor=fl_color,
                     style='filled',
-                    color='red'
+                    color=ln_color
                 )
 
         # Edges

@@ -9,7 +9,7 @@ with open(path.join(work_dir, 'README.md'), encoding='utf-8') as f:
 setup(
   name = 'pertchart',
   packages = ['pertchart'],
-  version = '0.5',
+  version = '0.5.1',
   license='MIT',
   description = 'PERT chart generator',
   long_description=long_description,
