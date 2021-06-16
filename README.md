@@ -1,6 +1,6 @@
 # pertchart
 
-[![Build Status](https://api.travis-ci.org/sisayie/pertchart.png?branch=master)](https://travis-ci.com/github/sisayie/pertchart)
+[![Actions Status](https://github.com/sisayie/pertchart/workflows/Upload%20Python%20Package/badge.svg)](https://github.com/{user}/{repo}/actions)
 
 The purpose of his application is to automatically generate pert chart from tasks in json file.
 
