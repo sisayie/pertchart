@@ -1,6 +1,6 @@
 # pertchart
 
-[![Actions Status](https://github.com/sisayie/pertchart/workflows/Build/badge.svg)](https://github.com/sisayie/pertchart/actions)
+[![Build](https://github.com/sisayie/pertchart/actions/workflows/python-publish.yml/badge.svg)](https://github.com/sisayie/pertchart/actions/workflows/python-publish.yml)
 
 The purpose of his application is to automatically generate pert chart from tasks in json file.
 
