@@ -17,7 +17,7 @@ pc.create_pert_chart(pc.calculate_values(tasks))
 ```
 
 ### Example Input Data File
-The data file contains task tuples one per line as in the following sample:
+The [sample_test_cases.json] data file contains task as in the following sample:
 ```
 {
   "T1.1": {
@@ -97,6 +97,19 @@ The data file contains task tuples one per line as in the following sample:
 
 ## Exacmple Output PERT chart for th eabove input data
 ![PERT Output](https://github.com/sisayie/pertchart/blob/master/pert_v0.4.png "PERT output")
+
+## Citing
+Please consider citing this repository if you find it useful in your research.
+```
+@misc{PERT_chart_generator,
+  author = {Sisay Adugna Chala},
+  title = {PERT Chart Generator},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/sisayie/pertchart}},
+}
+```
 
 ### Credits and References
 - http://www.graphviz.org/pdf/dotguide.pdfbtree.pyFigure13
