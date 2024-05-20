@@ -95,7 +95,7 @@ The [sample_test_cases.json] data file contains task as in the following sample:
 }
 ```
 
-## Exacmple Output PERT chart for th eabove input data
+## Example Output PERT chart for the above input data
 ![PERT Output](https://github.com/sisayie/pertchart/blob/master/pert_v0.4.png "PERT output")
 
 ## Citing
